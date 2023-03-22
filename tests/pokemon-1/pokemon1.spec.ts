@@ -13,7 +13,7 @@ import {expect} from 'chai';
 import {Pokemon1} from '../../src/pokemon-1/pokemon1';
 
 describe('Clase Pokemon1', () => {
-    const pokemon = new Pokemon1("pokemon1");
+    const pokemon = new Pokemon1("pokemon1", 40);
     it("Getter del nombre del pokemon1 resulta 'pokemon1' ", () => {
         expect(pokemon.getName()).to.be.eql("pokemon1");
     });
@@ -22,5 +22,8 @@ describe('Clase Pokemon1', () => {
     });
     it("Getter de la habilidad del pokemon1 resulta 'volar' ", () => {
         expect(pokemon.getHability()).to.be.eql("volar");
+    });
+    it("Getter de los niveles de habilidad resulta 40 ", () => {
+        expect(pokemon.getNiveles()).to.be.eql(40);
     });
 });

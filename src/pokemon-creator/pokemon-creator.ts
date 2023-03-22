@@ -14,7 +14,7 @@ import {Pokemon} from '../pokemon/pokemon-interface';
 /**
  * Clase abstracta que permite al código cliente crear cualquier pokemon
  */
-abstract class PokemonsCreator {
+export abstract class PokemonsCreator {
 
     /**
      * Método abstracto a implementar en las subclases que llama a la creación de un pokemon
@@ -27,7 +27,7 @@ abstract class PokemonsCreator {
      */
     logic(): string {
         const pokemonActual = this.factoryMethod();
-        return `Me llamo ${pokemonActual.getName()}` + `y soy un pokemon de tipo ${pokemonActual.getType()}, ` + `con la habilidad ${pokemonActual.getHability()}`;
+        return `Me llamo ${pokemonActual.getName()}` + ` y soy un pokemon de tipo ${pokemonActual.getType()}, ` + `con la habilidad ${pokemonActual.getHability()}, y la suma de mis niveles resulta ${pokemonActual.getNiveles()}`;
     }
 
 }

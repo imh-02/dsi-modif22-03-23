@@ -12,7 +12,7 @@
 /**
  * Tipo de pokemon que existen
  */
-export type pokemonType = "tipo1" | "tipo2" | "tipo1";
+export type pokemonType = "tipo1" | "tipo2" | "tipo3";
 
 /**
  * Tipo de habilidades posibles
@@ -26,4 +26,5 @@ export interface Pokemon {
     getName(): string;
     getType(): pokemonType;
     getHability(): hability;
+    getNiveles() : number;
 }

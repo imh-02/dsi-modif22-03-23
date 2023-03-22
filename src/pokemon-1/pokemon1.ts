@@ -15,7 +15,7 @@ import { pokemonType} from "../pokemon/pokemon-interface";
 export class Pokemon1 implements Pokemon{
     private readonly hability_ = "volar";
     private readonly type = "tipo1";
-    constructor (private readonly pokemonName: string) {
+    constructor (private readonly pokemonName: string, private habilityLevel: number) {
 
     }
 
@@ -29,6 +29,10 @@ export class Pokemon1 implements Pokemon{
 
     getHability(): hability {
         return this.hability_;
+    }
+
+    getNiveles(): number {
+        return this.habilityLevel;
     }
 
 }
